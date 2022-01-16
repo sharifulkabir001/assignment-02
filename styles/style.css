@@ -1,0 +1,186 @@
+/* -----------------------------
+        Font style
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+/* -----------------------------
+    common style or utilities
+-------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 34px;
+}
+/*-------------------------------
+            header style
+--------------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin-right: 34px;
+}
+.navigation li a{
+    text-decoration: none;
+}
+/* ---------------------------------
+            top part style
+------------------------------------ */
+.top-part-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.top-part-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-right img{
+    width: 100%;
+}
+.button-preebook{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 24px;
+    color: whitesmoke;
+    background-color: #E02C6D;
+    border-radius: 41px;
+}
+.fa-arrow-right{
+    color: whitesmoke;
+}
+hr{
+    border: 1px solid burlywood;
+    margin: 40px 20px;
+}
+.top-part-down{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    
+}
+/*------------------------------------------
+    collections or middle part style
+-------------------------------------------- */
+.popular-collection{
+    text-align: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1047px;
+    height: 1662px;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    border: 1px solid whitesmoke;
+    margin: 30px;
+    padding: 15px;
+}
+.collection .collection-banner img{
+    width: 300px;
+    height: 256px;
+}
+.fa-star{
+    color: #FB8200;
+}
+.fa-star-half-alt{
+    color: #FB8200;
+}
+.see-more{
+    text-align: end;
+}
+.see-more-style{
+    color: #E02C6D;
+    text-decoration: none;
+}
+/*-----------------------------------
+            end part style
+------------------------------------- */
+.end-part{
+    width: 1104px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.end-part-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+}
+.end-part-left{
+    width: 404px;
+    height: 270px;
+}
+.end-part img{
+    width: 100%;
+}
+.button-join{
+    color: whitesmoke;
+    background-color: #E02C6D;
+    padding: 5px 15px;
+}
+/*----------------------------------------
+             footer style
+------------------------------------------ */
+footer{
+    text-align: center;
+    width: 1440px;
+    height: 200px;
+    background-color: #0A0826;
+    color: white;
+}
+/* ----------------------------------------
+------------Media Queries------------------
+------------------------------------------- */
+
+/*-----------------------------------------
+             mobile device
+------------------------------------------- */
+@media only screen and (max-width:688px) {
+    .top-part-up{
+        background-color: red;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .top-part-up img{
+        width: 200px;
+    }
+    .top-part-down{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 30px;
+    }
+    .collections,{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .popular-collection{
+        text-align: center;
+    }
+}
+
+/* -------------------
+After trying a lot, I couldn't work with media queries. I don't understand anything. So that's how I submitted. Sorry for that.
+------------------------*/
